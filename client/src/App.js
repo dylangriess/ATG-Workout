@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.js";
-import Landing from "./components/Pages/Landing/Landing.js";
+import Landing from "./pages/Landing.js";
+import Contact from "./pages/Contact.js";
 import "./App.css";
 
 function App() {
