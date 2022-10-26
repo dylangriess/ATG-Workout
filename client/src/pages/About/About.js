@@ -9,10 +9,14 @@ function About() {
     <>
       <h1 className="aboutHeader">About ATG</h1>
       <Grid container spacing={2}>
-        <Grid xs={4}>
-          <img src={image1} className="aboutImage" alt="squat knee exercise" />
-        </Grid>
-        <Grid xs={8} textAlign="right" className="aboutText">
+        <Grid
+          item
+          xs={4}
+          style={{ backgroundImage: `url(${image1})` }}
+          className="aboutImage"
+          alt="squat knee exercise"
+        ></Grid>
+        <Grid item xs={8} textAlign="right" className="aboutText">
           <h3>
             Build From The Ground Up. Ankles to knees, knees to hips, hips to
             shoulders… building in this order makes the most bulletproof body
@@ -22,7 +26,7 @@ function About() {
             from your natural design?
           </h3>
         </Grid>
-        <Grid xs={8} textAlign="left" className="aboutText">
+        <Grid item xs={8} textAlign="left" className="aboutText">
           <h3>
             The more we build from the top down, the more pain and injuries we
             accumulate and the more gravity-bound we become. The more we build
@@ -31,9 +35,13 @@ function About() {
             high quality of life.
           </h3>
         </Grid>
-        <Grid xs={4}>
-          <img src={image2} className="aboutImage" alt="reverse knee flexion" />
-        </Grid>
+        <Grid
+          item
+          xs={4}
+          style={{ backgroundImage: `url(${image2})` }}
+          className="aboutImage"
+          alt="reverse knee flexion"
+        ></Grid>
       </Grid>
     </>
   );

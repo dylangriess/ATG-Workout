@@ -5,8 +5,9 @@
 }
 
 .aboutImage {
-  height: auto;
-  width: 25vw;
+  /* need to scale images for mobile */
+  height: 256px;
+  width: auto;
   margin: 25px 0px;
   border: 2px solid #fff;
   -moz-box-shadow: 10px 10px 5px #ccc;
@@ -15,11 +16,13 @@
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .aboutText {
   line-height: 35px;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .aboutText h3 {

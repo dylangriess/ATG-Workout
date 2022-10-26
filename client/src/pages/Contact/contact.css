@@ -1,0 +1,19 @@
+.contactForm input,
+textarea {
+  display: block;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.contactForm textarea {
+  height: 100px;
+}
+
+Button {
+  width: 25%;
+  color: "#770000";
+}
+
+label {
+  text-align: start;
+}

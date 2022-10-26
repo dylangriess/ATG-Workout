@@ -1,5 +1,8 @@
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Send from "@mui/icons-material/Send";
 import "./contact.css";
 
 function Contact() {
@@ -53,19 +56,20 @@ function Contact() {
 
   return (
     <>
-      <div className="contactPage">
-        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+      <h1 className="aboutHeader">Contact</h1>
+      <form className="contactForm" ref={form} onSubmit={sendEmail}>
+        <Grid container alignItems="center" direction="column">
           <label>Name</label>
           <input
             type="text"
-            name="user_name"
+            name="name"
             value={name}
             onChange={handleInputChange}
           />
           <label>Email</label>
           <input
             type="email"
-            name="user_email"
+            name="email"
             value={email}
             onChange={handleInputChange}
           />
@@ -75,9 +79,17 @@ function Contact() {
             value={message}
             onChange={handleInputChange}
           />
-          <input type="submit" value="Send" />
-        </form>
-      </div>
+          <Button
+            variant="contained"
+            type="submit"
+            value="Send"
+            style={{ backgroundColor: "#770000", color: "#FFFFFF" }}
+            endIcon={<Send />}
+          >
+            Send
+          </Button>
+        </Grid>
+      </form>
     </>
   );
 }
