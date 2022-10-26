@@ -12,7 +12,7 @@ function About() {
         <Grid xs={4}>
           <img src={image1} className="aboutImage" />
         </Grid>
-        <Grid xs={8} textAlign="right">
+        <Grid xs={8} textAlign="right" className="aboutText">
           <h3>
             Build From The Ground Up. Ankles to knees, knees to hips, hips to
             shoulders… building in this order makes the most bulletproof body
@@ -22,7 +22,7 @@ function About() {
             from your natural design?
           </h3>
         </Grid>
-        <Grid xs={8} textAlign="left">
+        <Grid xs={8} textAlign="left" className="aboutText">
           <h3>
             The more we build from the top down, the more pain and injuries we
             accumulate and the more gravity-bound we become. The more we build

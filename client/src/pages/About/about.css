@@ -1,11 +1,27 @@
 .aboutHeader {
   font-size: 3rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .aboutImage {
   height: auto;
   width: 25vw;
-  border: 5px solid black;
   margin: 25px 0px;
+  border: 2px solid #fff;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 3px 3px 10px black;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.aboutText {
+  line-height: 35px;
+  padding: 2rem;
+}
+
+.aboutText h3 {
+  font-weight: 300;
 }
