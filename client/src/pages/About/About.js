@@ -1,13 +1,16 @@
 import React from "react";
 import Grid from "@mui/material/Grid"; // Grid version 1
 import image1 from "../../assets/images/image1.jpeg";
+import image2 from "../../assets/images/image2.jpeg";
+import "./about.css";
 
 function About() {
   return (
     <>
+      <h1 className="aboutHeader">About ATG</h1>
       <Grid container spacing={2}>
         <Grid xs={4}>
-          <img src={image1} cols="4" className="aboutImage" />
+          <img src={image1} className="aboutImage" />
         </Grid>
         <Grid xs={8} textAlign="right">
           <h3>
@@ -19,7 +22,7 @@ function About() {
             from your natural design?
           </h3>
         </Grid>
-        <Grid xs={8}>
+        <Grid xs={8} textAlign="left">
           <h3>
             The more we build from the top down, the more pain and injuries we
             accumulate and the more gravity-bound we become. The more we build
@@ -29,7 +32,7 @@ function About() {
           </h3>
         </Grid>
         <Grid xs={4}>
-          <h1>picture</h1>
+          <img src={image2} className="aboutImage" />
         </Grid>
       </Grid>
     </>
