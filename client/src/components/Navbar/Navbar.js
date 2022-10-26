@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import "./navbar.css";
 
 const pages = ["About", "Contact Us", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
