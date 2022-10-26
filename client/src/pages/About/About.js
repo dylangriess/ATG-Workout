@@ -10,7 +10,7 @@ function About() {
       <h1 className="aboutHeader">About ATG</h1>
       <Grid container spacing={2}>
         <Grid xs={4}>
-          <img src={image1} className="aboutImage" />
+          <img src={image1} className="aboutImage" alt="squat knee exercise" />
         </Grid>
         <Grid xs={8} textAlign="right" className="aboutText">
           <h3>
@@ -32,7 +32,7 @@ function About() {
           </h3>
         </Grid>
         <Grid xs={4}>
-          <img src={image2} className="aboutImage" />
+          <img src={image2} className="aboutImage" alt="reverse knee flexion" />
         </Grid>
       </Grid>
     </>
