@@ -57,39 +57,41 @@ function Contact() {
   return (
     <div id="contact">
       <h1 className="aboutHeader">Contact</h1>
-      <form className="contactForm" ref={form} onSubmit={sendEmail}>
-        <Grid container alignItems="center" direction="column">
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            value={name}
-            onChange={handleInputChange}
-          />
-          <label>Email</label>
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleInputChange}
-          />
-          <label>Message</label>
-          <textarea
-            name="message"
-            value={message}
-            onChange={handleInputChange}
-          />
-          <Button
-            variant="contained"
-            type="submit"
-            value="Send"
-            style={{ backgroundColor: "#770000", color: "#FFFFFF" }}
-            endIcon={<Send />}
-          >
-            Send
-          </Button>
-        </Grid>
-      </form>
+      <div>
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+          <Grid container alignItems="left" direction="column">
+            <h2>Name</h2>
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={handleInputChange}
+            />
+            <h2>Email</h2>
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={handleInputChange}
+            />
+            <h2>Message</h2>
+            <textarea
+              name="message"
+              value={message}
+              onChange={handleInputChange}
+            />
+            <Button
+              variant="contained"
+              type="submit"
+              value="Send"
+              style={{ backgroundColor: "#770000", color: "#FFFFFF" }}
+              endIcon={<Send />}
+            >
+              Send
+            </Button>
+          </Grid>
+        </form>
+      </div>
     </div>
   );
 }

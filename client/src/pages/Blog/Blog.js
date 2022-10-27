@@ -4,6 +4,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import FormatQuote from "@mui/icons-material/FormatQuote";
 
 function Blog() {
   const users = [
@@ -31,16 +32,29 @@ function Blog() {
               <Box
                 sx={{
                   width: "30rem",
-                  border: "3px solid black",
+                  border: "3px solid #770000",
                   backgroundColor: "black",
                   color: "white",
                   margin: "25px",
+                  boxShadow: "3px 3px 10px black",
                 }}
               >
-                <Card variant="outlined">
+                <Card>
                   <React.Fragment>
-                    <CardContent>
-                      <Typography variant="h5" component="div">
+                    <CardContent
+                      sx={{
+                        backgroundColor: "black",
+                        color: "white",
+                        opacity: "90%",
+                      }}
+                    >
+                      <Typography
+                        variant="h5"
+                        component="div"
+                        sx={{
+                          fontSize: "2rem",
+                        }}
+                      >
                         {user.firstname}, {user.age}
                       </Typography>
                       <Typography
@@ -51,7 +65,13 @@ function Blog() {
                         }}
                         variant="body2"
                       >
+                        <FormatQuote
+                          sx={{ fontSize: "2rem", color: "#770000" }}
+                        />
                         {user.review}
+                        <FormatQuote
+                          sx={{ fontSize: "2rem", color: "#770000" }}
+                        />
                       </Typography>
                     </CardContent>
                   </React.Fragment>
