@@ -26,7 +26,18 @@ function Landing() {
           cursor={true}
           repeat={Infinity}
         />
-        <div>With ATG</div>
+        <div>
+          With{" "}
+          <span
+            style={{
+              textDecoration: "underline",
+              textDecorationColor: "#770000",
+            }}
+          >
+            ATG
+          </span>
+          .
+        </div>
       </div>
     </div>
   );
