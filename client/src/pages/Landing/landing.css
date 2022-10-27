@@ -13,11 +13,12 @@
 
 .centered {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 0%);
   color: white;
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  width: 100vw;
 }
