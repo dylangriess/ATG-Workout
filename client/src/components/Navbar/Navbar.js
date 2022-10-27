@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,7 +13,8 @@ import MenuItem from "@mui/material/MenuItem";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import "./navbar.css";
 
-const pages = ["About", "Contact", "Blog"];
+const pages = ["About", "Contact Us", "Blog"];
+console.log(pages);
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -57,13 +59,15 @@ function NavBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="navbar button"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon>
+                <Link to="/">Home</Link>
+              </MenuIcon>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -83,11 +87,18 @@ function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem key={pages[0]} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">{pages[0]}</Typography>
+                <Link to={{ pathname: "/About" }}></Link>
+              </MenuItem>
+              <MenuItem key={pages[1]} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">{pages[1]}</Typography>
+                <Link to={{ pathname: "/Contact" }}></Link>
+              </MenuItem>
+              <MenuItem key={pages[2]} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">{pages[2]}</Typography>
+                <Link to={{ pathname: "/Blog" }}></Link>
+              </MenuItem>
             </Menu>
           </Box>
           <FitnessCenterIcon
@@ -112,15 +123,18 @@ function NavBar() {
             ATG Workouts
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button>
+              <Typography textAlign="center">{pages[0]}</Typography>
+              <Link to={{ pathname: "/About" }}></Link>
+            </Button>
+            <Button>
+              <Typography textAlign="center">{pages[1]}</Typography>
+              <Link to={{ pathname: "/Contact" }}></Link>
+            </Button>
+            <Button>
+              <Typography textAlign="center">{pages[2]}</Typography>
+              <Link to={{ pathname: "/Blog" }}></Link>
+            </Button>
           </Box>
         </Toolbar>
       </Container>
