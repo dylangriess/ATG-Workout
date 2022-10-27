@@ -1,0 +1,23 @@
+.landingBg img {
+  width: 100vw;
+  height: 100vh;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}

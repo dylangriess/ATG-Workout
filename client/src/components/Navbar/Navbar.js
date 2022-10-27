@@ -9,11 +9,10 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import "./navbar.css";
 
-const pages = ["About", "Contact Us", "Blog"];
+const pages = ["About", "Contact", "Blog"];
 console.log(pages);
 
 function NavBar() {
@@ -65,9 +64,9 @@ function NavBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon>
-                <Link smooth to="/"></Link>;
-              </MenuIcon>
+              <Link smooth to="/">
+                <MenuIcon />
+              </Link>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -87,27 +86,36 @@ function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <MenuItem key={pages[0]} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">
-                  <Link smooth to="#about">
-                    {pages[0]}
-                  </Link>
-                </Typography>
-              </MenuItem>
-              <MenuItem key={pages[1]} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">
-                  <Link smooth to="#contact">
-                    {pages[1]}
-                  </Link>
-                </Typography>
-              </MenuItem>
-              <MenuItem key={pages[2]} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">
-                  <Link smooth to="#blog">
-                    {pages[2]}
-                  </Link>
-                </Typography>
-              </MenuItem>
+              <Link
+                smooth
+                to="#about"
+                style={{ textDecoration: "none", color: "white" }}
+                key={pages[0]}
+                onClick={handleCloseNavMenu}
+                className="navlinks"
+              >
+                {pages[0]}
+              </Link>
+              <Link
+                smooth
+                to="#contact"
+                style={{ textDecoration: "none", color: "white" }}
+                key={pages[1]}
+                onClick={handleCloseNavMenu}
+                className="navlinks"
+              >
+                {pages[1]}
+              </Link>
+              <Link
+                smooth
+                to="#blog"
+                style={{ textDecoration: "none", color: "white" }}
+                key={pages[2]}
+                onClick={handleCloseNavMenu}
+                className="navlinks"
+              >
+                {pages[2]}
+              </Link>
             </Menu>
           </Box>
           <FitnessCenterIcon
@@ -132,27 +140,21 @@ function NavBar() {
             ATG Workouts
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button>
-              <Typography textAlign="center">
-                <Link smooth to="#about">
-                  {pages[0]}
-                </Link>
-              </Typography>
-            </Button>
-            <Button>
-              <Typography textAlign="center">
-                <Link smooth to="#contact">
-                  {pages[1]}
-                </Link>
-              </Typography>
-            </Button>
-            <Button>
-              <Typography textAlign="center">
-                <Link smooth to="#blog">
-                  {pages[2]}
-                </Link>
-              </Typography>
-            </Button>
+            <Link smooth to="#about">
+              <Button>
+                <Typography textAlign="center">{pages[0]}</Typography>
+              </Button>
+            </Link>
+            <Link smooth to="#contact">
+              <Button>
+                <Typography textAlign="center">{pages[1]}</Typography>
+              </Button>
+            </Link>
+            <Link smooth to="#blog">
+              <Button>
+                <Typography textAlign="center">{pages[2]}</Typography>
+              </Button>
+            </Link>
           </Box>
         </Toolbar>
       </Container>
