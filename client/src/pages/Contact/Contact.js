@@ -57,9 +57,10 @@ function Contact() {
   return (
     <div id="contact">
       <h1 className="aboutHeader">Contact</h1>
-      <div>
-        <form className="contactForm" ref={form} onSubmit={sendEmail}>
-          <Grid container alignItems="left" direction="column">
+
+      <Grid container spacing={2}>
+        <Grid xs={4} item alignItems="left" direction="column">
+          <form className="contactForm" ref={form} onSubmit={sendEmail}>
             <h2>Name</h2>
             <input
               type="text"
@@ -89,9 +90,13 @@ function Contact() {
             >
               Send
             </Button>
-          </Grid>
-        </form>
-      </div>
+          </form>
+        </Grid>
+
+        <Grid xs={4}>
+          <h1>HELLO</h1>
+        </Grid>
+      </Grid>
     </div>
   );
 }

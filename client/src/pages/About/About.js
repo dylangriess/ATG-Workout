@@ -11,7 +11,8 @@ function About() {
       <Grid container spacing={2}>
         <Grid
           item
-          xs={4}
+          xs={12}
+          md={4}
           style={{ backgroundImage: `url(${image1})` }}
           className="aboutImage"
           alt="squat knee exercise"
@@ -37,7 +38,8 @@ function About() {
         </Grid>
         <Grid
           item
-          xs={4}
+          xs={12}
+          md={4}
           style={{ backgroundImage: `url(${image2})` }}
           className="aboutImage"
           alt="reverse knee flexion"
