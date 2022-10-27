@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -66,7 +66,7 @@ function NavBar() {
               color="inherit"
             >
               <MenuIcon>
-                <Link to="/">Home</Link>
+                <Link smooth to="/"></Link>;
               </MenuIcon>
             </IconButton>
             <Menu
@@ -89,17 +89,23 @@ function NavBar() {
             >
               <MenuItem key={pages[0]} onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <Link to={{ pathname: "/About" }}>{pages[0]}</Link>
+                  <Link smooth to="#about">
+                    {pages[0]}
+                  </Link>
                 </Typography>
               </MenuItem>
               <MenuItem key={pages[1]} onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <Link to={{ pathname: "/Contact" }}>{pages[1]}</Link>
+                  <Link smooth to="#contact">
+                    {pages[1]}
+                  </Link>
                 </Typography>
               </MenuItem>
               <MenuItem key={pages[2]} onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <Link to={{ pathname: "/Blog" }}>{pages[2]}</Link>
+                  <Link smooth to="#blog">
+                    {pages[2]}
+                  </Link>
                 </Typography>
               </MenuItem>
             </Menu>
@@ -128,17 +134,23 @@ function NavBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button>
               <Typography textAlign="center">
-                <Link to={{ pathname: "/About" }}>{pages[0]}</Link>
+                <Link smooth to="#about">
+                  {pages[0]}
+                </Link>
               </Typography>
             </Button>
             <Button>
               <Typography textAlign="center">
-                <Link to={{ pathname: "/Contact" }}>{pages[1]}</Link>
+                <Link smooth to="#contact">
+                  {pages[1]}
+                </Link>
               </Typography>
             </Button>
             <Button>
               <Typography textAlign="center">
-                <Link to={{ pathname: "/Blog" }}>{pages[2]}</Link>
+                <Link smooth to="#blog">
+                  {pages[2]}
+                </Link>
               </Typography>
             </Button>
           </Box>

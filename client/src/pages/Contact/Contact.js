@@ -55,7 +55,7 @@ function Contact() {
   };
 
   return (
-    <>
+    <div id="contact">
       <h1 className="aboutHeader">Contact</h1>
       <form className="contactForm" ref={form} onSubmit={sendEmail}>
         <Grid container alignItems="center" direction="column">
@@ -90,7 +90,7 @@ function Contact() {
           </Button>
         </Grid>
       </form>
-    </>
+    </div>
   );
 }
 

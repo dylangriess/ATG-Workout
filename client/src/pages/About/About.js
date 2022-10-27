@@ -6,7 +6,7 @@ import "./about.css";
 
 function About() {
   return (
-    <>
+    <div id="about">
       <h1 className="aboutHeader">About ATG</h1>
       <Grid container spacing={2}>
         <Grid
@@ -43,7 +43,7 @@ function About() {
           alt="reverse knee flexion"
         ></Grid>
       </Grid>
-    </>
+    </div>
   );
 }
 
