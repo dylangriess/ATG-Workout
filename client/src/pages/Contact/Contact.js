@@ -1,8 +1,8 @@
 import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Send, Instagram, AlternateEmail } from "@mui/icons-material/";
+import { Send } from "@mui/icons-material/";
 import "./contact.css";
 
 function Contact() {
@@ -56,65 +56,50 @@ function Contact() {
 
   return (
     <div id="contact" className="contactContainer">
-      <h1 className="aboutHeader">Contact</h1>
-
-      <Grid container spacing={2}>
-        <Grid xs={6} item alignItems="left" direction="column">
-          <h1>Send Me A Message!</h1>
-          <form className="contactForm" ref={form} onSubmit={sendEmail}>
-            <h2>Name</h2>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={handleInputChange}
-            />
-            <h2>Email</h2>
-            <input
-              type="email"
-              name="email"
-              value={email}
-              onChange={handleInputChange}
-            />
-            <h2>Message</h2>
-            <textarea
-              name="message"
-              value={message}
-              onChange={handleInputChange}
-            />
-            <Button
-              variant="contained"
-              type="submit"
-              value="Send"
-              style={{ backgroundColor: "#770000", color: "#FFFFFF" }}
-              endIcon={<Send />}
-            >
-              Send
-            </Button>
-          </form>
-        </Grid>
-
-        <Grid xs={6}>
-          <div className="contactLinks">
-            <ul>
-              <li>
-                <a
-                  href="https://www.instagram.com/eric_schemmel/"
-                  target="_blank"
-                >
-                  <Instagram sx={{ fontSize: "3rem" }} /> Instagram
-                </a>
-              </li>
-
-              <li>
-                <a href="mailto:eric.schemmel8@gmail.com" target="_blank">
-                  <AlternateEmail sx={{ fontSize: "3rem" }} /> Email
-                </a>
-              </li>
-            </ul>
-          </div>
-        </Grid>
-      </Grid>
+      <h1 className="contactHeader">Contact</h1>
+      <Container xs={12} sx={{ paddingBottom: "10rem" }}>
+        <h1 className="inputLabels">Send Me A Message!</h1>
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+          <h2 className="inputLabels">Name</h2>
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleInputChange}
+            placeholder="Name"
+          />
+          <h2 className="inputLabels">Email</h2>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleInputChange}
+            placeholder="Email Address"
+          />
+          <h2 className="inputLabels">Message</h2>
+          <textarea
+            name="message"
+            value={message}
+            onChange={handleInputChange}
+            placeholder="Enter A Message"
+          />
+          <Button
+            variant="contained"
+            type="submit"
+            value="Send"
+            style={{
+              backgroundColor: "white",
+              color: "black",
+              height: "3rem",
+              marginTop: "25px",
+              width: "25%",
+            }}
+            endIcon={<Send />}
+          >
+            Send
+          </Button>
+        </form>
+      </Container>
     </div>
   );
 }

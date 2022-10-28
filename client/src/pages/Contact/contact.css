@@ -10,8 +10,6 @@ textarea {
 }
 
 Button {
-  width: 33%;
-  color: "#770000";
   height: 3rem;
   margin-top: 25px;
 }
@@ -31,17 +29,33 @@ a {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
-
-  box-shadow: inset 0 0 0 0 #770000;
-  color: #770000;
-  margin: 75px 0px;
-  padding: 10px 25px;
+  box-shadow: inset 0 0 0 0 white;
+  color: white;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .contactLinks a:hover {
   font-size: 3rem;
   font-weight: bold;
-  box-shadow: inset 400px 0 0 0 #770000;
+  box-shadow: inset 400px 0 0 0 white;
+  color: #770000;
+}
+
+.contactContainer {
+  background-image: url("../../assets//images/GroupExercise.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+}
+
+.contactHeader {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 75px;
+}
+
+.inputLabels {
   color: white;
 }

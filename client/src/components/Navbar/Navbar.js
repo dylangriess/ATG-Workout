@@ -30,12 +30,20 @@ function NavBar() {
     <AppBar
       position="static"
       className="navbar"
-      style={{ background: "#770000" }}
+      style={{
+        background: "#770000",
+        height: "7rem",
+        justifyContent: "space-between",
+      }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <FitnessCenterIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            sx={{
+              display: { xs: "none", md: "flex" },
+              mr: 1,
+              fontSize: "2rem",
+            }}
           />
           <Typography
             variant="h6"
@@ -45,17 +53,23 @@ function NavBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "roboto",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: "4rem",
             }}
           >
             ATG
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="navbar button"
@@ -89,7 +103,11 @@ function NavBar() {
               <Link
                 smooth
                 to="#about"
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  margin: "0px",
+                }}
                 key={pages[0]}
                 onClick={handleCloseNavMenu}
                 className="navlinks"

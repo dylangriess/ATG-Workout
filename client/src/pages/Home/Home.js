@@ -13,8 +13,8 @@ function Home() {
       <Container maxWidth="lg">
         <About />
         <Blog />
-        <Contact />
       </Container>
+      <Contact />
     </div>
   );
 }
