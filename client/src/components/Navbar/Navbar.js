@@ -155,7 +155,7 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            ATG Workouts
+            ATG
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Link smooth to="#about">

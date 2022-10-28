@@ -2,8 +2,9 @@ import React from "react";
 import { Container } from "@mui/system";
 import Landing from "../Landing/Landing.js";
 import About from "../About/About.js";
-import Contact from "../Contact/Contact.js";
+import FAQ from "../FAQ/FAQ.js";
 import Blog from "../Blog/Blog.js";
+import Contact from "../Contact/Contact.js";
 import "./home.css";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       <Landing />
       <Container maxWidth="lg">
         <About />
+        <FAQ />
         <Blog />
       </Container>
       <Contact />
