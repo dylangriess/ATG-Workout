@@ -5,15 +5,6 @@
   margin: 75px 0px;
 }
 
-.aboutImage {
-  height: auto;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .aboutText {
   line-height: 35px;
 }
@@ -30,4 +21,13 @@
   padding: 50px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.aboutContainer {
+  display: flex;
+}
+
+.aboutImg {
+  border: 3px solid #770000;
+  box-shadow: 3px 3px 15px black;
 }
