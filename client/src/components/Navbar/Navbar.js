@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import "./navbar.css";
 
-const pages = ["About", "Blog", "Contact"];
+const pages = ["About", "FAQ", "Blog", "Contact"];
 console.log(pages);
 
 function NavBar() {
@@ -117,7 +117,7 @@ function NavBar() {
               </Link>
               <Link
                 smooth
-                to="#blog"
+                to="#FAQ"
                 style={{ textDecoration: "none", color: "white" }}
                 key={pages[1]}
                 onClick={handleCloseNavMenu}
@@ -127,13 +127,23 @@ function NavBar() {
               </Link>
               <Link
                 smooth
-                to="#contact"
+                to="#blog"
                 style={{ textDecoration: "none", color: "white" }}
                 key={pages[2]}
                 onClick={handleCloseNavMenu}
                 className="navlinks"
               >
                 {pages[2]}
+              </Link>
+              <Link
+                smooth
+                to="#contact"
+                style={{ textDecoration: "none", color: "white" }}
+                key={pages[3]}
+                onClick={handleCloseNavMenu}
+                className="navlinks"
+              >
+                {pages[3]}
               </Link>
             </Menu>
           </Box>
@@ -164,14 +174,19 @@ function NavBar() {
                 <Typography textAlign="center">{pages[0]}</Typography>
               </Button>
             </Link>
-            <Link smooth to="#blog">
+            <Link smooth to="#FAQ">
               <Button>
                 <Typography textAlign="center">{pages[1]}</Typography>
               </Button>
             </Link>
-            <Link smooth to="#contact">
+            <Link smooth to="#blog">
               <Button>
                 <Typography textAlign="center">{pages[2]}</Typography>
+              </Button>
+            </Link>
+            <Link smooth to="#contact">
+              <Button>
+                <Typography textAlign="center">{pages[3]}</Typography>
               </Button>
             </Link>
           </Box>

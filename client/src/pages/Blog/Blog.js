@@ -20,14 +20,45 @@ function Blog() {
       review:
         "Training with Eric has been awesome! You can really tell how invested he is in the program and feel his passion to help you succeed. I feel the progress in myself already and I can't wait to continue the journey.",
     },
+    {
+      firstname: "Jessica",
+      age: "45",
+      review:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia quas vel sint commodi repudiandae consequuntur voluptatum laboru numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praeskj.",
+    },
+    {
+      firstname: "Glen",
+      age: "62",
+      review: `Lorem ommodi repudiandae consequuntur voluptatum laborum
+      numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+      optio, eaque rerum! Provident similique accusantium nemo autem.`,
+    },
   ];
 
   return (
     <div id="blog">
       <h1 className="aboutHeader">Testimonials</h1>
-      <div className="testimonials">
+      <div
+        className="testimonials"
+        style={{
+          display: "grid",
+          columnGap: 3,
+          rowGap: 3,
+          gridTemplateColumns: "repeat(2, 1fr)",
+          margin: "5rem",
+        }}
+      >
         {users.map((user) => (
-          <Grid container spacing={2}>
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              display: "grid",
+              columnGap: 1,
+              rowGap: 1,
+              gridTemplateColumns: "repeat(2, 1fr)",
+            }}
+          >
             <Grid item xs={4}>
               <Box
                 sx={{

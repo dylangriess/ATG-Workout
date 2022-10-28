@@ -94,7 +94,7 @@ export default function VerticalLinearStepper() {
                       sx={{
                         fontSize: "1.17em",
                         lineHeight: "40px",
-                        fontFamily: "Roboto Mono",
+                        fontFamily: "Roboto",
                         marginBottom: "15px",
                         fontWeight: "bold",
                       }}
@@ -134,13 +134,18 @@ export default function VerticalLinearStepper() {
               ))}
             </Stepper>
             {activeStep === steps.length && (
-              <Paper square elevation={0} sx={{ p: 3 }}>
+              <Paper
+                square
+                elevation={0}
+                sx={{ p: 3, background: "rgba(0, 0, 0, 0)" }}
+              >
                 <Typography
                   sx={{
-                    fontSize: "1.17em",
+                    fontSize: "1.5em",
                     lineHeight: "40px",
-                    fontFamily: "Roboto Mono, monospace",
+                    fontFamily: "Roboto",
                     marginBottom: "15px",
+                    color: "#770000",
                   }}
                 >
                   Contact me if you have additional questions!

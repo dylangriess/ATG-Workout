@@ -93,6 +93,7 @@ function Contact() {
               height: "3rem",
               marginTop: "25px",
               width: "25%",
+              fontSize: "1.25rem",
             }}
             endIcon={<Send />}
           >
