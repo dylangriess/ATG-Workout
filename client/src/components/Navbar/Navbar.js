@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import "./navbar.css";
 
-const pages = ["About", "Contact", "Blog"];
+const pages = ["About", "Blog", "Contact"];
 console.log(pages);
 
 function NavBar() {
@@ -98,7 +98,7 @@ function NavBar() {
               </Link>
               <Link
                 smooth
-                to="#contact"
+                to="#blog"
                 style={{ textDecoration: "none", color: "white" }}
                 key={pages[1]}
                 onClick={handleCloseNavMenu}
@@ -108,7 +108,7 @@ function NavBar() {
               </Link>
               <Link
                 smooth
-                to="#blog"
+                to="#contact"
                 style={{ textDecoration: "none", color: "white" }}
                 key={pages[2]}
                 onClick={handleCloseNavMenu}
@@ -145,12 +145,12 @@ function NavBar() {
                 <Typography textAlign="center">{pages[0]}</Typography>
               </Button>
             </Link>
-            <Link smooth to="#contact">
+            <Link smooth to="#blog">
               <Button>
                 <Typography textAlign="center">{pages[1]}</Typography>
               </Button>
             </Link>
-            <Link smooth to="#blog">
+            <Link smooth to="#contact">
               <Button>
                 <Typography textAlign="center">{pages[2]}</Typography>
               </Button>

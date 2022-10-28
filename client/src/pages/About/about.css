@@ -1,21 +1,15 @@
 .aboutHeader {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: bold;
+  margin: 75px 0px;
 }
 
 .aboutImage {
-  /* need to scale images for mobile */
-  min-height: 33vh;
-  width: 25vw;
-  margin: 50px 25px;
-  border: 2px solid black;
-  -moz-box-shadow: 10px 10px 5px #ccc;
-  -webkit-box-shadow: 10px 10px 5px #ccc;
-  box-shadow: 3px 3px 10px black;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -26,4 +20,14 @@
 
 .aboutText h3 {
   font-weight: 400;
+}
+
+.profPic {
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

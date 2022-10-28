@@ -18,13 +18,13 @@ function Blog() {
       firstname: "Colin",
       age: "29",
       review:
-        "Training with Eric has been awesome! You can really tell how invested he is in the program and feel his passion to help you succeed. I feel the progress in myself already and I can't wait to continue the journey. ",
+        "Training with Eric has been awesome! You can really tell how invested he is in the program and feel his passion to help you succeed. I feel the progress in myself already and I can't wait to continue the journey.",
     },
   ];
 
   return (
     <div id="blog">
-      <h1 className="aboutHeader">Blog</h1>
+      <h1 className="aboutHeader">Testimonials</h1>
       <div className="testimonials">
         {users.map((user) => (
           <Grid container spacing={2}>

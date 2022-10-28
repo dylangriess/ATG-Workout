@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Send from "@mui/icons-material/Send";
+import { Send, Instagram, AlternateEmail } from "@mui/icons-material/";
 import "./contact.css";
 
 function Contact() {
@@ -55,11 +55,12 @@ function Contact() {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" className="contactContainer">
       <h1 className="aboutHeader">Contact</h1>
 
       <Grid container spacing={2}>
-        <Grid xs={4} item alignItems="left" direction="column">
+        <Grid xs={6} item alignItems="left" direction="column">
+          <h1>Send Me A Message!</h1>
           <form className="contactForm" ref={form} onSubmit={sendEmail}>
             <h2>Name</h2>
             <input
@@ -93,8 +94,25 @@ function Contact() {
           </form>
         </Grid>
 
-        <Grid xs={4}>
-          <h1>HELLO</h1>
+        <Grid xs={6}>
+          <div className="contactLinks">
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/eric_schemmel/"
+                  target="_blank"
+                >
+                  <Instagram sx={{ fontSize: "3rem" }} /> Instagram
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:eric.schemmel8@gmail.com" target="_blank">
+                  <AlternateEmail sx={{ fontSize: "3rem" }} /> Email
+                </a>
+              </li>
+            </ul>
+          </div>
         </Grid>
       </Grid>
     </div>
