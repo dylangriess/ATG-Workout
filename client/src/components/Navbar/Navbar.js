@@ -59,6 +59,7 @@ function NavBar() {
               color: "inherit",
               textDecoration: "none",
               fontSize: "4rem",
+              textShadow: "3px 3px 8px black",
             }}
           >
             ATG

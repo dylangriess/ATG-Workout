@@ -10,7 +10,7 @@ function About() {
     <div id="about">
       <h1 className="aboutHeader">What is ATG?</h1>
       <Grid
-        sx={{ margin: "50px" }}
+        sx={{ margin: "50px", border: "1px solid black" }}
         container
         spacing={2}
         className="aboutContainer"
@@ -22,13 +22,14 @@ function About() {
           style={{ backgroundImage: `url(${image1})` }}
           className="aboutImage"
           alt="squat knee exercise"
+          sx={{ border: "1px solid black" }}
         ></Grid>
         <Grid
           item
           xs={8}
           textAlign="right"
           className="aboutText"
-          sx={{ marginBottom: "50px" }}
+          sx={{ marginBottom: "50px", border: "1px solid black" }}
         >
           <h3>
             Build From The Ground Up. Ankles to knees, knees to hips, hips to
@@ -39,7 +40,13 @@ function About() {
             from your natural design?
           </h3>
         </Grid>
-        <Grid item xs={8} textAlign="left" className="aboutText">
+        <Grid
+          item
+          xs={8}
+          textAlign="left"
+          className="aboutText"
+          sx={{ border: "1px solid black" }}
+        >
           <h3>
             The more we build from the top down, the more pain and injuries we
             accumulate and the more gravity-bound we become. The more we build
@@ -55,6 +62,7 @@ function About() {
           style={{ backgroundImage: `url(${image2})` }}
           className="aboutImage"
           alt="reverse knee flexion"
+          sx={{ marginBottom: "50px", border: "1px solid black" }}
         ></Grid>
       </Grid>
       <h1 className="aboutHeader">Get To Know Eric</h1>

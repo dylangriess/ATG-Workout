@@ -1,5 +1,5 @@
 .aboutHeader {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   font-weight: bold;
   margin: 75px 0px;
@@ -19,7 +19,7 @@
 }
 
 .aboutText h3 {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .profPic {

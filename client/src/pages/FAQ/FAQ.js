@@ -94,8 +94,9 @@ export default function VerticalLinearStepper() {
                       sx={{
                         fontSize: "1.17em",
                         lineHeight: "40px",
-                        fontFamily: "Roboto Mono, monospace",
+                        fontFamily: "Roboto Mono",
                         marginBottom: "15px",
+                        fontWeight: "bold",
                       }}
                     >
                       {step.description}
