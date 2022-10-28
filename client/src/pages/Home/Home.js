@@ -11,8 +11,8 @@ function Home() {
   return (
     <div id="home" className="homeContainer">
       <Landing />
+      <About />
       <Container maxWidth="lg">
-        <About />
         <FAQ />
         <Blog />
       </Container>

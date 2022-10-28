@@ -6,21 +6,22 @@
 }
 
 .aboutText {
-  line-height: 35px;
-}
-
-.aboutText h3 {
-  font-weight: 700;
+  line-height: 50px;
+  font-size: 1.25rem;
+  margin: 25px;
 }
 
 .profPic {
   height: auto;
   width: 100vw;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.profText {
+  line-height: 50px;
+  font-size: 1.25rem;
+  margin: 25px;
 }
 
 .aboutContainer {

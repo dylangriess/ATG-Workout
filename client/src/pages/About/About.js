@@ -14,8 +14,9 @@ function About() {
         sx={{
           display: "grid",
           columnGap: 3,
-          rowGap: 1,
+          rowGap: 3,
           gridTemplateColumns: "repeat(2, 1fr)",
+          margin: "5rem",
         }}
       >
         <div>
@@ -23,10 +24,11 @@ function About() {
             className="aboutImg"
             style={{ maxWidth: "100%", height: "auto" }}
             src={image1}
+            alt="knee flexion with dumbbells"
           />
         </div>
         <div>
-          <h3>
+          <h3 className="aboutText">
             Build From The Ground Up. Ankles to knees, knees to hips, hips to
             shoulders… building in this order makes the most bulletproof body
             according to gravity, yet no previous system has ever actually
@@ -36,7 +38,7 @@ function About() {
           </h3>
         </div>
         <div>
-          <h3>
+          <h3 className="aboutText">
             The more we build from the top down, the more pain and injuries we
             accumulate and the more gravity-bound we become. The more we build
             from the ground up, the more we free ourselves of pains and
@@ -49,20 +51,20 @@ function About() {
             className="aboutImg"
             style={{ maxWidth: "100%", height: "auto" }}
             src={image2}
+            alt="knee flexion with hip extension"
           />
         </div>
       </Box>
       <h1 className="aboutHeader">Get To Know Eric</h1>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ margin: "5rem" }}>
         <Grid
           item
-          xs={12}
-          md={4}
+          xs={4}
           style={{ backgroundImage: `url(${schemmelimage})` }}
           className="profPic"
           alt="Eric Schemmel Profile Pic"
         ></Grid>
-        <Grid item xs={8} textAlign="right" className="aboutText">
+        <Grid item xs={6} textAlign="right" className="profText">
           <h3>
             My name is Eric Schemmel. I am certified as one of 50 ATG
             specialists in the entire world, and the ONLY specialist in
