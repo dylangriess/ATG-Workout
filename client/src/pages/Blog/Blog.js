@@ -84,9 +84,11 @@ function Blog() {
                         component="div"
                         sx={{
                           fontSize: "2rem",
+                          textDecoration: "underline",
+                          textDecorationColor: "#770000",
                         }}
                       >
-                        {user.firstname}, {user.age}
+                        {user.firstname}. {user.age}
                       </Typography>
                       <Typography
                         sx={{

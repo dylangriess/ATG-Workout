@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import "./navbar.css";
 
-const pages = ["About", "FAQ", "Blog", "Contact"];
+const pages = ["About", "FAQ", "Testimonials", "Contact"];
 console.log(pages);
 
 function NavBar() {
