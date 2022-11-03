@@ -52,6 +52,7 @@ function Blog() {
           <Grid
             container
             spacing={2}
+            item
             xs={12}
             sx={{
               display: "grid",
