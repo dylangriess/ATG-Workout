@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "https://dylangriess.github.io/ATG-Workout",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
