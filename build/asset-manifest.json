@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/ATG-Workout/static/css/main.fa0f6617.css",
-    "main.js": "/ATG-Workout/static/js/main.3f14e30f.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/ATG-Workout/static/js/787.c4e7f8f9.chunk.js",
+    "main.css": "/ATG-Workout/static/css/main.154ddc8b.css",
+    "main.js": "/ATG-Workout/static/js/main.dec153d0.js",
+    "static/js/27.95291165.chunk.js": "/ATG-Workout/static/js/27.95291165.chunk.js",
     "static/media/ExerciseWallpaper.jpg": "/ATG-Workout/static/media/ExerciseWallpaper.efd9054f83c77a12e112.jpg",
     "static/media/GroupExercise.jpeg": "/ATG-Workout/static/media/GroupExercise.635991b16afa942d1a2e.jpeg",
     "static/media/VectorBackground.jpeg": "/ATG-Workout/static/media/VectorBackground.ab1bec8ab1ed04308017.jpeg",
     "static/media/Schemmel1.png": "/ATG-Workout/static/media/Schemmel1.6a98394074e0a300e924.png",
     "static/media/image1.jpeg": "/ATG-Workout/static/media/image1.f655ab82cbb3edbde1ec.jpeg",
     "static/media/image2.jpeg": "/ATG-Workout/static/media/image2.b357e76b312b0d5502ec.jpeg",
-    "index.html": "/ATG-Workout/index.html",
-    "main.fa0f6617.css.map": "/ATG-Workout/static/css/main.fa0f6617.css.map",
-    "main.3f14e30f.js.map": "/ATG-Workout/static/js/main.3f14e30f.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/ATG-Workout/static/js/787.c4e7f8f9.chunk.js.map"
+    "index.html": "/ATG-Workout/index.html"
   },
   "entrypoints": [
-    "static/css/main.fa0f6617.css",
-    "static/js/main.3f14e30f.js"
+    "static/css/main.154ddc8b.css",
+    "static/js/main.dec153d0.js"
   ]
 }
