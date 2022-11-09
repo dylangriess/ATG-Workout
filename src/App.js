@@ -11,16 +11,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/#landing" element={<Landing />} />
-          <Route path="/#about" element={<About />} />
-          <Route path="/#contact" element={<Contact />} />
-          <Route path="/#blog" element={<Blog />} />
-        </Routes>
-      </Router>
+      <Header />
+      <Home />
     </>
   );
 }
