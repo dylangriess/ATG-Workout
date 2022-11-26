@@ -36,7 +36,7 @@ function Blog() {
   ];
 
   return (
-    <div id="blog">
+    <div id="testimonials">
       <h1 className="aboutHeader">Testimonials</h1>
       <div
         className="testimonials"

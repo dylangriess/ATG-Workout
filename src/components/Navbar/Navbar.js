@@ -128,16 +128,24 @@ function NavBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button>
-              <Typography textAlign="center">{pages[0]}</Typography>
+              <Typography textAlign="center">
+                <a href="#about">{pages[0]}</a>
+              </Typography>
             </Button>
             <Button>
-              <Typography textAlign="center">{pages[1]}</Typography>
+              <Typography textAlign="center">
+                <a href="#FAQ">{pages[1]}</a>
+              </Typography>
             </Button>
             <Button>
-              <Typography textAlign="center">{pages[2]}</Typography>
+              <Typography textAlign="center">
+                <a href="#testimonials">{pages[2]}</a>
+              </Typography>
             </Button>
             <Button>
-              <Typography textAlign="center">{pages[3]}</Typography>
+              <Typography textAlign="center">
+                <a href="#contact">{pages[3]}</a>
+              </Typography>
             </Button>
           </Box>
         </Toolbar>
