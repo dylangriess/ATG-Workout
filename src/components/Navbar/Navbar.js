@@ -12,7 +12,6 @@ import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import "./navbar.css";
 
 const pages = ["About", "FAQ", "Testimonials", "Contact"];
-console.log(pages);
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -98,10 +97,18 @@ function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages[0]}
-              {pages[1]}
-              {pages[2]}
-              {pages[3]}
+              <a href="#about" style={{ color: "black" }}>
+                {pages[0]}
+              </a>
+              <a href="#FAQ" style={{ color: "black" }}>
+                {pages[1]}
+              </a>
+              <a href="#testimonials" style={{ color: "black" }}>
+                {pages[2]}
+              </a>
+              <a href="#contact" style={{ color: "black" }}>
+                {pages[3]}
+              </a>
             </Menu>
           </Box>
 
