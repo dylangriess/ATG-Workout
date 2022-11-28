@@ -13,17 +13,11 @@ import "./faq.css";
 const steps = [
   {
     label: "What program is best for me?",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-    optio, eaque rerum! Provident similique accusantium nemo autem.`,
+    description: `Typically, everyone begins on our Zero Program. This program is great for getting people used to the unique form, and it has a great amount of low-intensity volume training. ATG also has programs of Dense, Standards, and many different protocols we can implement based on your goals and where you are at physically.`,
   },
   {
     label: "How many times should I workout per week?",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-      molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-      numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-      optio, eaque rerum! Provident similique accusantium nemo autem.`,
+    description: `At ATG, 3 days per week is the minimum. We also have packages where you can workout 4 days per week or more. Most people need reps and volume to get back their range of motion, so the more days you come in, the better!`,
   },
   {
     label: "What type of equipment is needed?",
@@ -55,10 +49,7 @@ const steps = [
   },
   {
     label: "If I have an injury, is this program still a good fit?",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-    optio, eaque rerum! Provident similique accusantium nemo autem.`,
+    description: `Yes! ATG is an exceptionally good program for injuries of any nature. We have the ability and knowledge to progress or regress any exercise to make sure you are getting an amazing workout WITHOUT pain. ATG was founded on the premise of working out of knee pain, and it has developed to be able to treat any injury including: foot, ankle, calf, knee, quadriceps, hamstring, hips, shoulders and elbows.`,
   },
 ];
 
