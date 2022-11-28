@@ -29,21 +29,12 @@ function About() {
         </div>
         <div>
           <h3 className="aboutText">
-            Build From The Ground Up. Ankles to knees, knees to hips, hips to
-            shoulders… building in this order makes the most bulletproof body
-            according to gravity, yet no previous system has ever actually
-            programmed its volume accordingly. How do you find out your true
-            athleticism and bulletproofing potential if you build out of balance
-            from your natural design?
-          </h3>
-        </div>
-        <div>
-          <h3 className="aboutText">
-            The more we build from the top down, the more pain and injuries we
-            accumulate and the more gravity-bound we become. The more we build
-            from the ground up, the more we free ourselves of pains and
-            injuries, the more athletic we get, and the longer we live with a
-            high quality of life.
+            ATG is a style of fitness that believes in working from the ground
+            up. This means working the FULL RANGE of our feet, ankles, calves,
+            knees, hips all the way up to your shoulders and neck. ATG allows us
+            to put our egos aside and focus on the weak links in our body
+            through REGRESSION. These weak links create the nagging pain we deal
+            with in our day to day lives, and ATG is an effective solution.
           </h3>
         </div>
         <div>
