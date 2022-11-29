@@ -21,17 +21,11 @@ const steps = [
   },
   {
     label: "What type of equipment is needed?",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-    optio, eaque rerum! Provident similique accusantium nemo autem.`,
+    description: `Our Zero Program is strictly bodyweight! The only thing you need is something to elevate your body and your heels. You can easily use stairs or household items such as books to get this elevation. Dense and Standards, however, does require dumbbells, barbells and the use of weights. We have everything you may need when you come train with us in person!`,
   },
   {
-    label: "What is the length of this program?",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-    optio, eaque rerum! Provident similique accusantium nemo autem.`,
+    label: "What is the length of each workout?",
+    description: `Each workout will last approximately 1 hour. We offer short and concise exercises that you can easily incorporate it into your daily routine.`,
   },
   {
     label: "How much does the product cost?",
