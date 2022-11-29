@@ -1,12 +1,9 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import StepLabel from "@mui/material/StepLabel";
-import StepContent from "@mui/material/StepContent";
-import Button from "@mui/material/Button";
-import Paper from "@mui/material/Paper";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
 import "./faq.css";
 
@@ -66,105 +63,48 @@ const steps = [
   },
 ];
 
-export default function VerticalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(0);
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
+export default function SimpleAccordion() {
   return (
-    <>
-      <div id="FAQ" className="FAQContainer">
-        <h1 className="FAQHeader">FAQ</h1>
-        <Container xs={12}>
-          <Box sx={{ maxWidth: 1200 }}>
-            <Stepper activeStep={activeStep} orientation="vertical">
-              {steps.map((step, index) => (
-                <Step key={step.label}>
-                  <StepLabel sx={{ fontSize: "2rem", color: "red" }}>
-                    {step.label}
-                  </StepLabel>
-                  <StepContent>
-                    <Typography
-                      sx={{
-                        fontSize: "1.17em",
-                        lineHeight: "40px",
-                        fontFamily: "Roboto",
-                        marginBottom: "15px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {step.description}
-                    </Typography>
-                    <Box sx={{ mb: 2 }}>
-                      <div>
-                        <Button
-                          variant="contained"
-                          onClick={handleNext}
-                          className="FAQbutton"
-                          sx={{
-                            mt: 1,
-                            mr: 1,
-                            backgroundColor: "#770000",
-                            color: "white",
-                          }}
-                        >
-                          {index === steps.length - 1 ? "Finish" : "Continue"}
-                        </Button>
-                        <Button
-                          disabled={index === 0}
-                          onClick={handleBack}
-                          sx={{
-                            mt: 1,
-                            mr: 1,
-                            color: "#770000",
-                          }}
-                        >
-                          Back
-                        </Button>
-                      </div>
-                    </Box>
-                  </StepContent>
-                </Step>
-              ))}
-            </Stepper>
-            {activeStep === steps.length && (
-              <Paper
-                square
-                elevation={0}
-                sx={{ p: 3, background: "rgba(0, 0, 0, 0)" }}
-              >
-                <Typography
-                  sx={{
-                    fontSize: "1.5em",
-                    lineHeight: "40px",
-                    fontFamily: "Roboto",
-                    marginBottom: "15px",
-                    color: "#770000",
-                  }}
-                >
-                  Contact me if you have additional questions!
-                </Typography>
-                <Button
-                  onClick={handleReset}
-                  sx={{ mt: 1, mr: 1, color: "#770000" }}
-                >
-                  Reset
-                </Button>
-              </Paper>
-            )}
-          </Box>
-        </Container>
-      </div>
-    </>
+    <div>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>Accordion 1</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography>Accordion 2</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion disabled>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Disabled Accordion</Typography>
+        </AccordionSummary>
+      </Accordion>
+    </div>
   );
 }
