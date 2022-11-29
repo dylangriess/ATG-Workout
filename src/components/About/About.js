@@ -20,7 +20,7 @@ function About() {
           <button className="carousel-button prev">&#8678;</button>
           <button className="carousel-button next">&#8680;</button>
           <ul>
-            <li className="slide">
+            <li className="slide" data-active>
               <img src={carousel1} alt="carousel item #1"></img>
             </li>
             <li className="slide">
