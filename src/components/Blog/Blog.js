@@ -12,24 +12,28 @@ function Blog() {
     {
       firstname: "Michael",
       age: "29",
+      key: "user1",
       review:
         "I’m sore in places I didn’t know was possible to be sore in. That just means he’s making me a better version of myself. Talk about unlocking potential!",
     },
     {
       firstname: "Colin",
       age: "29",
+      key: "user2",
       review:
         "Training with Eric has been awesome! You can really tell how invested he is in the program and feel his passion to help you succeed. I feel the progress in myself already and I can't wait to continue the journey.",
     },
     {
       firstname: "Jessica",
       age: "45",
+      key: "user3",
       review:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia quas vel sint commodi repudiandae consequuntur voluptatum laboru numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praeskj.",
     },
     {
       firstname: "Glen",
       age: "62",
+      key: "user4",
       review: `Lorem ommodi repudiandae consequuntur voluptatum laborum
       numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
       optio, eaque rerum! Provident similique accusantium nemo autem.`,
@@ -52,6 +56,7 @@ function Blog() {
               rowGap: 1,
               gridTemplateColumns: "repeat(2, 1fr)",
             }}
+            key={user.key}
           >
             <Grid item xs={4}>
               <Box

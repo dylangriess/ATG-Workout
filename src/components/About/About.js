@@ -12,7 +12,7 @@ import schemmelimage from "../../assets/images/Schemmel1.png";
 import "./about.css";
 
 function About() {
-  const buttons = document.querySelector("[data-carousel-button]");
+  const buttons = document.querySelectorAll("[data-carousel-button]");
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const offset = button.dataset.carouselButton === "next" ? 1 : -1;
@@ -27,13 +27,14 @@ function About() {
       slides.children[newIndex].dataset.active = true;
       delete activeSlide.dataset.active;
     });
+    console.log(button);
   });
 
   return (
     <div id="about">
       <h1 className="aboutHeader">What is ATG?</h1>
       <section aria-label="image carousel">
-        <div class="carousel" data-carousel>
+        <div className="carousel" data-carousel>
           <button className="carousel-button prev" data-carousel-button="prev">
             &#8678;
           </button>
@@ -41,19 +42,19 @@ function About() {
             &#8680;
           </button>
           <ul data-slides>
-            <li className="slide" data-active>
+            <li className="slide" key="carousel1" data-active>
               <img src={carousel1} alt="carousel item #1"></img>
             </li>
-            <li className="slide">
+            <li className="slide" key="carousel2">
               <img src={carousel2} alt="carousel item #2"></img>
             </li>
-            <li className="slide">
+            <li className="slide" key="carousel3">
               <img src={carousel3} alt="carousel item #3"></img>
             </li>
-            <li className="slide">
+            <li className="slide" key="carousel4">
               <img src={carousel4} alt="carousel item #4"></img>
             </li>
-            <li className="slide">
+            <li className="slide" key="carousel5">
               <img src={carousel5} alt="carousel item #5"></img>
             </li>
           </ul>
@@ -77,6 +78,14 @@ function About() {
             through REGRESSION. These weak links create the nagging pain we deal
             with in our day to day lives, and ATG is an effective solution.
           </h3>
+        </div>
+        <div>
+          <img
+            className="aboutImg"
+            style={{ maxWidth: "100%", height: "auto" }}
+            src={image1}
+            alt="knee flexion with hip extension"
+          />
         </div>
         <div>
           <img
