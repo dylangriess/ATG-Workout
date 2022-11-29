@@ -3,11 +3,11 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid"; // Grid version 1
 import image1 from "../../assets/images/image1.jpeg";
 import image2 from "../../assets/images/image2.jpeg";
-import carousel1 from "../../assets/images/carousel1";
-import carousel2 from "../../assets/images/carousel2";
-import carousel3 from "../../assets/images/carousel3";
-import carousel4 from "../../assets/images/carousel4";
-import carousel5 from "../../assets/images/carousel5";
+import carousel1 from "../../assets/images/carousel1.jpg";
+import carousel2 from "../../assets/images/carousel2.jpg";
+import carousel3 from "../../assets/images/carousel3.jpg";
+import carousel4 from "../../assets/images/carousel4.jpg";
+import carousel5 from "../../assets/images/carousel5.jpg";
 import schemmelimage from "../../assets/images/Schemmel1.png";
 import "./about.css";
 
@@ -15,16 +15,10 @@ function About() {
   return (
     <div id="about">
       <h1 className="aboutHeader">What is ATG?</h1>
-      <Box
-        sx={{
-          display: "grid",
-          columnGap: 3,
-          rowGap: 3,
-          gridTemplateColumns: "repeat(2, 1fr)",
-          margin: "5rem",
-        }}
-      >
-        <div aria-label="image carousel">
+      <section aria-label="image carousel">
+        <div class="carousel">
+          <button className="carousel-button prev">&#8678;</button>
+          <button className="carousel-button next">&#8680;</button>
           <ul>
             <li className="slide">
               <img src={carousel1} alt="carousel item #1"></img>
@@ -43,6 +37,16 @@ function About() {
             </li>
           </ul>
         </div>
+      </section>
+      <Box
+        sx={{
+          display: "grid",
+          columnGap: 3,
+          rowGap: 3,
+          gridTemplateColumns: "repeat(2, 1fr)",
+          margin: "5rem",
+        }}
+      >
         <div>
           <h3 className="aboutText">
             ATG is a style of fitness that believes in working from the ground
