@@ -12,14 +12,35 @@ import schemmelimage from "../../assets/images/Schemmel1.png";
 import "./about.css";
 
 function About() {
+  const buttons = document.querySelector("[data-carousel-button]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+      const slides = button
+        .closest("[data-carousel]")
+        .querySelector("[data-slides]");
+      const activeSlide = slides.querySelector("[data-active]");
+      let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+      // if statements allow for carousel to be on a loop
+      if (newIndex < 0) newIndex = slides.children.length - 1;
+      if (newIndex >= slides.children.length) newIndex = 0;
+      slides.children[newIndex].dataset.active = true;
+      delete activeSlide.dataset.active;
+    });
+  });
+
   return (
     <div id="about">
       <h1 className="aboutHeader">What is ATG?</h1>
       <section aria-label="image carousel">
-        <div class="carousel">
-          <button className="carousel-button prev">&#8678;</button>
-          <button className="carousel-button next">&#8680;</button>
-          <ul>
+        <div class="carousel" data-carousel>
+          <button className="carousel-button prev" data-carousel-button="prev">
+            &#8678;
+          </button>
+          <button className="carousel-button next" data-carousel-button="next">
+            &#8680;
+          </button>
+          <ul data-slides>
             <li className="slide" data-active>
               <img src={carousel1} alt="carousel item #1"></img>
             </li>
