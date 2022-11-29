@@ -72,7 +72,7 @@ export default function SimpleAccordion() {
             <Accordion
               style={{
                 opacity: "80%",
-                backgroundColor: "#353535",
+                backgroundColor: "#111111",
                 color: "white",
                 border: "1px black solid",
               }}

@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import FormatQuote from "@mui/icons-material/FormatQuote";
+import Container from "@mui/material/Container";
 
 function Blog() {
   const users = [
@@ -38,16 +39,7 @@ function Blog() {
   return (
     <div id="testimonials">
       <h1 className="aboutHeader">Testimonials</h1>
-      <div
-        className="testimonials"
-        style={{
-          display: "grid",
-          columnGap: 3,
-          rowGap: 3,
-          gridTemplateColumns: "repeat(2, 1fr)",
-          margin: "5rem",
-        }}
-      >
+      <Container xs={12}>
         {users.map((user) => (
           <Grid
             container
@@ -115,7 +107,7 @@ function Blog() {
             </Grid>
           </Grid>
         ))}
-      </div>
+      </Container>
     </div>
   );
 }

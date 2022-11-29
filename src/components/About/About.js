@@ -57,14 +57,20 @@ function About() {
         ></Grid>
         <Grid item xs={6} textAlign="right" className="profText">
           <h3>
-            My name is Eric Schemmel. I am certified as one of 50 ATG
-            specialists in the entire world, and the ONLY specialist in
-            Colorado. I pursued learning about ATG and what it has to offer in
-            September 2022, but my passion for health and wellness has embodied
-            throughout my adulthood. I believe that a sound mind and body
-            contributes to a fulfilled life with greater opportunities. When I
-            am not working hard to extend this mindset to others, you can find
-            me putting this program into practice skiing in the mountains.
+            I am 27 and originally from Cedar Rapids, IA. I have a love for the
+            outdoors, especially skiing, hiking and biking. I have always been
+            into fitness and health. From being an overweight kid that lost 40
+            lbs in high school, regaining that weight back in college and losing
+            it again after college. I have experienced going through difficult
+            lifestyle changes many times in my life. Once I got back into shape,
+            I realized I still had nagging pain in my knees and lower back. I
+            would stretch everyday thinking my back was tight when in fact, it
+            was my hip flexors that were weak and short from sitting all day,
+            everyday. ATG refined my skills and taught me revolutionary programs
+            to help me gain strength back into my lower back. I am now
+            completely pain free thanks to these programs! My goal now is to
+            show as many people as possible how to get back their life without
+            pain.
           </h3>
         </Grid>
       </Grid>
