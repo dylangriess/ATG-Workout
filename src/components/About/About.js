@@ -8,13 +8,14 @@ import carousel2 from "../../assets/images/carousel2.jpg";
 import carousel3 from "../../assets/images/carousel3.jpg";
 import carousel4 from "../../assets/images/carousel4.jpg";
 import carousel5 from "../../assets/images/carousel5.jpg";
-import schemmelimage from "../../assets/images/Schemmel1.png";
+import profPic from "../../assets/images/ProfPic.jpg";
 import "./about.css";
 
 function About() {
   const buttons = document.querySelectorAll("[data-carousel-button]");
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
+      console.log("clicked!");
       const offset = button.dataset.carouselButton === "next" ? 1 : -1;
       const slides = button
         .closest("[data-carousel]")
@@ -101,26 +102,26 @@ function About() {
         <Grid
           item
           xs={4}
-          style={{ backgroundImage: `url(${schemmelimage})` }}
+          style={{ backgroundImage: `url(${profPic})` }}
           className="profPic"
           alt="Eric Schemmel Profile Pic"
         ></Grid>
         <Grid item xs={6} textAlign="right" className="profText">
           <h3>
-            I am 27 and originally from Cedar Rapids, IA. I have a love for the
-            outdoors, especially skiing, hiking and biking. I have always been
-            into fitness and health. From being an overweight kid that lost 40
-            lbs in high school, regaining that weight back in college and losing
-            it again after college. I have experienced going through difficult
-            lifestyle changes many times in my life. Once I got back into shape,
-            I realized I still had nagging pain in my knees and lower back. I
-            would stretch everyday thinking my back was tight when in fact, it
-            was my hip flexors that were weak and short from sitting all day,
-            everyday. ATG refined my skills and taught me revolutionary programs
-            to help me gain strength back into my lower back. I am now
-            completely pain free thanks to these programs! My goal now is to
-            show as many people as possible how to get back their life without
-            pain.
+            My name is Eric Schemmel. I am 27 years old, from Cedar Rapids,
+            Iowa. I have a love for the outdoors, especially skiing, hiking and
+            biking. I have always brought attention to health and fitness. I was
+            overweight as a child, lost 40 pounds in high school, regained that
+            weight back in college, and lost it again after college. I have
+            experienced going through difficult lifestyle changes many times in
+            my life. Once I got back into shape, I realized I still had nagging
+            pain in my knees and lower back. I would stretch everyday thinking
+            my back was just tight when, in fact, it was my hip flexors that
+            were weak from sitting all day, everyday. ATG refined my skills and
+            taught me revolutionary programs to help me gain strength into my
+            lower back. I am now completely pain-free thanks to these programs!
+            Now, my goal is to show as many people as possible how to get their
+            life back without pain.
           </h3>
         </Grid>
       </Grid>
