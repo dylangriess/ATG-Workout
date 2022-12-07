@@ -3,11 +3,6 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid"; // Grid version 1
 import image1 from "../../assets/images/image1.jpeg";
 import image2 from "../../assets/images/image2.jpeg";
-import carousel1 from "../../assets/images/carousel1.jpg";
-import carousel2 from "../../assets/images/carousel2.jpg";
-import carousel3 from "../../assets/images/carousel3.jpg";
-import carousel4 from "../../assets/images/carousel4.jpg";
-import carousel5 from "../../assets/images/carousel5.jpg";
 import profPic from "../../assets/images/ProfPic.jpg";
 import "./about.css";
 
@@ -34,33 +29,6 @@ function About() {
   return (
     <div id="about">
       <h1 className="aboutHeader">What is ATG?</h1>
-      <section aria-label="image carousel">
-        <div className="carousel" data-carousel>
-          <button className="carousel-button prev" data-carousel-button="prev">
-            &#8678;
-          </button>
-          <button className="carousel-button next" data-carousel-button="next">
-            &#8680;
-          </button>
-          <ul data-slides>
-            <li className="slide" key="carousel1" data-active>
-              <img src={carousel1} alt="carousel item #1"></img>
-            </li>
-            <li className="slide" key="carousel2">
-              <img src={carousel2} alt="carousel item #2"></img>
-            </li>
-            <li className="slide" key="carousel3">
-              <img src={carousel3} alt="carousel item #3"></img>
-            </li>
-            <li className="slide" key="carousel4">
-              <img src={carousel4} alt="carousel item #4"></img>
-            </li>
-            <li className="slide" key="carousel5">
-              <img src={carousel5} alt="carousel item #5"></img>
-            </li>
-          </ul>
-        </div>
-      </section>
       <Box
         sx={{
           display: "grid",
@@ -114,14 +82,17 @@ function About() {
             overweight as a child, lost 40 pounds in high school, regained that
             weight back in college, and lost it again after college. I have
             experienced going through difficult lifestyle changes many times in
-            my life. Once I got back into shape, I realized I still had nagging
-            pain in my knees and lower back. I would stretch everyday thinking
-            my back was just tight when, in fact, it was my hip flexors that
-            were weak from sitting all day, everyday. ATG refined my skills and
-            taught me revolutionary programs to help me gain strength into my
-            lower back. I am now completely pain-free thanks to these programs!
-            Now, my goal is to show as many people as possible how to get their
-            life back without pain.
+            my life.
+          </h3>
+          <h3>
+            Once I got back into shape, I realized I still had nagging pain in
+            my knees and lower back. I would stretch everyday thinking my back
+            was just tight when, in fact, it was my hip flexors that were weak
+            from sitting all day, everyday. ATG refined my skills and taught me
+            revolutionary programs to help me gain strength into my lower back.
+            I am now completely pain-free thanks to these programs! Now, my goal
+            is to show as many people as possible how to get their life back
+            without pain.
           </h3>
         </Grid>
       </Grid>
